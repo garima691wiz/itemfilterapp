@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Light background for contrast */
+  padding: 20px;
+  min-height: 100vh; /* Full height for better layout */
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item {
+  margin: 10px; /* Increased margin for spacing */
+  padding: 15px; /* Increased padding for a better feel */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 8px; /* Slightly rounded corners */
+  width: 150px; /* Adjusted width for better item size */
+  background-color: #ffffff; /* White background for items */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation for hover effect */
+  font-size: 16px; /* Improved font size for readability */
+}
+
+.item:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Increased margin for separation */
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 20px; /* Increased padding for buttons */
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  font-weight: 600; /* Bold text for better visibility */
+  font-size: 14px; /* Adjusted font size */
+}
+
+.pagination button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.pagination button.active {
+  background-color: #0056b3; /* Keep the active button color */
+  font-weight: bold; /* Bold text for the active button */
+  border: 2px solid #ffffff; /* White border for the active button */
+}
+
+.pagination button:focus {
+  outline: none; /* Remove default outline */
+}
