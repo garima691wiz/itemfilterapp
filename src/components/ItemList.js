@@ -10,13 +10,11 @@ const ItemList = () => {
   const { filteredItems } = useFilteredItems(items, filter);
 
   return (
-    <div>
-      <div className="item-list" >
-        {filteredItems.map((item, index) => (
-          <Item key={index} item={item} />
-        ))}
-      </div>
-       </div>
+    <div className="item-list">
+      {filteredItems.map((item, index) => (
+        <Item key={index} item={item} />
+      ))}
+    </div>
   );
 };
 
